@@ -40,7 +40,9 @@ function ajoutMessage(){
 
 }
 
+setInterval(afficherList, 1000)
 
+lastId = 0
 
 function afficherList(){
     let xmlhttp = new XMLHttpRequest();
@@ -50,10 +52,12 @@ function afficherList(){
             var messages = JSON.parse(this.response)
             console.log(messages)
             let discussion = document.getElementById("discussion")
+            discussion.innerHTML=""
             let oneMessage = ""
 
             for (let i = 0; i < messages.length; i++) {
                 discussion.innerHTML  += "<p>"+messages[i].message+"</p>"
+                discussion.scrollTop = discussion.scrollHeight;
                 console.log(oneMessage)
                 //lastId = messages[i].id 
             }

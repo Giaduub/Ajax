@@ -41,7 +41,6 @@ if(isset($_SESSION['user']) && !empty($_SESSION['user'])){
                 </form>
                 <div id="reponse"></div>
             </div>
-
      </div>
         </main>
 </section>
