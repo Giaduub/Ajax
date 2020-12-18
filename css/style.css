@@ -1,0 +1,28 @@
+body{
+	overflow: hidden;
+   background-color: rgba(48, 48, 48, 1);
+    
+}
+
+
+.chat{
+    background-image: url(../css/game.gif);
+    background-repeat: no-repeat;
+    align-items: center;
+    position: relative;
+    left: 7%;
+    top:25%;
+}
+
+#discussion{
+    border: black;
+    background-color:rgba(255, 255, 255, 0.5);
+    height: 50vh;
+	box-shadow: 0 0 5px grey;
+    overflow-y: scroll;
+    
+}
+
+.saisie{
+	height: 20vh;
+}
